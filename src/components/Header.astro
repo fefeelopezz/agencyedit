@@ -1,0 +1,28 @@
+---
+import Index from "../pages/index.astro"
+---
+
+<header class="fixed top-0 z-10 w-full p-2 mt-3">
+    <div class="flex justify-center items-center">
+        <nav class="text-white font-semibold rounded-full px-2">
+            <a class="mr-3 transtion duration-300 hover:text-cyan-400" href="">Servicios</a>
+            <a class="mr-3 transtion duration-300 hover:text-cyan-400" href="">Nosotros</a>
+            <a class="transtion duration-300 hover:text-cyan-400" href="">Contacto</a>
+        </nav>
+    </div>
+</header>
+
+<style>
+    header div nav {
+        animation: nav-shadown 1s linear both;
+        animation-timeline: scroll();
+        animation-range: 0 20px;
+    }
+
+    @keyframes nav-shadown {
+        to {
+            @apply shadow-lg ring-1 backdrop-blur bg-gray-300/60 dark:bg-gray-800/60 ring-white/10;
+        }
+    }
+</style>
+</style>

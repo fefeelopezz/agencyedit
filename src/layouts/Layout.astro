@@ -1,0 +1,34 @@
+---
+import Header from "../components/Header.astro"
+import '@fontsource-variable/onest';
+import Main from "../components/Main.astro";
+import Contacto from "../components/Contacto.astro";
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Agency Edit</title>
+	</head>
+	<body class="">
+		<div class="fixed left-0 top-0 -z-10 h-full w-full">
+			<div class="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
+		</div>
+		<slot />
+		<Header />
+		<Main />
+		<Contacto />
+	</body>
+</html>
+
+<style>
+	body{
+		font-family: 'Onest Variable', sans-serif;
+	}
+</style>
+
